@@ -1,0 +1,256 @@
+/* Reset Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Header Styles */
+  .logo{
+    display: flex;
+    float: left;
+  }
+  .logo img 
+  {
+    border-radius: 541px;
+      height: 60px;
+      width : 65px ; 
+     
+  }
+  
+  .logo p{
+    padding-top: 12px;
+    padding-left: 0;
+    font-size: 25px;
+  }
+  
+  header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  
+  nav ul li {
+    margin-left: 50px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 25px;
+  }
+  
+  nav ul li a {
+    
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 0.1s ease-out;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left: -110px;
+    border-radius: 15px;
+  }
+  
+  .dropdown-menu a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  
+  
+  /* ----------------------Navbar---------------- */
+  main {
+    margin-top: 50px;
+  }
+  
+  #random-image {
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    height: 800px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+  }
+  
+  @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  
+    .animate {
+      animation-name: fade-in;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+    }
+    
+  
+  
+  
+  #random-image h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #random-image p {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button1 {
+    background-color: #c0392b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button1:hover {
+    background-color: #fff;
+    color: #c0392b;
+  }
+  
+  #services {
+    padding: 50px;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #services p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  #services ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #testimonials {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    margin-bottom: 50px;
+  }
+  
+  .testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial .author {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 40px;
+  }
+  
+  .company p
+  {
+    font-size: 100px;
+  
+  }

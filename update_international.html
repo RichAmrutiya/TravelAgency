@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+	<style>
+        
+		form {
+			margin: 20px auto;
+			width: 50%;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 20px;
+			background-color: #f2f2f2;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		
+		input[type="text"] {
+			width: 95%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+		
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+    <center><h1>Add New Packages</h2></center>
+	<form action="update_international.php" method="POST" enctype="multipart/form-data">
+
+        <label for="place_name">Place Name:</label>
+			<input type="text" id="place_name" name="place_name" required>
+
+		<label for="price">Price:</label>
+			<input type="text" id="price" name="price" required>
+
+		<label for="duration">Duration:</label>
+			<input type="text" id="duration" name="duration" required>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+
+
+
